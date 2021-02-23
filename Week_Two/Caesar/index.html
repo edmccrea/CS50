@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/312f705777.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+    <title>Caesar's Cipher</title>
+</head>
+<body>
+    <div class="container">
+        <i class="fas fa-crown"></i>
+        <h1>Caesar's Cipher</h1>
+        <div class="options-container">
+            <div class="options">
+                <button class="encipher" id="choice">Encipher</button>
+                <p>or</p>
+                <button class="decipher" id="choice">Decipher</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="inputFields">
+                <input class="key" type="text" placeholder="Key">
+                <input class="string" type="text" placeholder="">
+            </div>
+            <div class="submitContainer">
+                <button class="submit"></button>
+            </div>
+        </div>
+        <div class="results">
+            <h2 class="resultTitle"></h2>
+            <p class="resultText"></p>
+            <button class="restart">Restart</button>
+        </div>
+    </div>
+    <footer>
+        <p class="footerText">How it works:</br> 
+            Enter a key between 1 - 26 and a string of text. The cipher will then shift the letters by the key amount and return an encrypted message.</br>
+            To decrypt, enter the same key and the encrypted text to reveal the original message.</br>
+            Always remember your key!
+        </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
